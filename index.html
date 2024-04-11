@@ -21,6 +21,12 @@
         position: relative;
         height: 100vh;
         scroll-snap-type: y proximity;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
       }
 
       .nav {
@@ -71,7 +77,6 @@
         justify-content: center;
         height: 100%;
         width: 100%;
-        transform: translateZ(-1px) scale(1.2);
       }
 
       .hero-page > .front h1 {
@@ -85,7 +90,17 @@
       .bg-error-qa {
         background-color: black;
         background-blend-mode: hard-light;
-        background-image: url("https://dvorak.aiursoft.cn/image/img-9d68357d-e770-44e1-8db1-be64ecfc3e37.gif");
+        background-image: url("/bg-errorQA.webp");
+      }
+
+      .bg-kitten {
+        background-image: url("/kitten.webp");
+        background-size: auto;
+      }
+
+      .bg-epic-games-launcher {
+        background-image: url("/epic-games-launcher.webp");
+        background-size: auto;
       }
 
       .offset {
@@ -108,6 +123,7 @@
         align-items: center;
         justify-content: center;
         color: #c2c2c2;
+        overflow: hidden;
       }
 
       .arrow {
@@ -182,10 +198,12 @@
         </a>
       </address>
     </nav>
+
     <span class="beian">
       <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备 2024191084</a>
     </span>
-    <div class="hero-page bg-fix bg-homepage">
+
+    <section class="hero-page bg-fix bg-homepage">
       <div class="front">
         <h1>
           Rust Soft
@@ -213,8 +231,26 @@
           </svg>
         </span>
       </footer>
-    </div>
-    <div class="hero-page bg-error-qa">
+    </section>
+
+    <section class="hero-page bg-epic-games-launcher">
+      <div class="front">
+        <h1>
+          Dvorak's Epic Games Launcher
+          <span class="offset">Dvorak's Epic Games Launcher</span>
+        </h1>
+
+        <article>
+          <p>A Better Epic Games Launcher~</p>
+          <br />
+          <a href="https://github.com/dvorakchen/dvorak-epic-games-launcher/" target="_blank"
+            >go and see</a
+          >
+        </article>
+      </div>
+    </section>
+
+    <section class="hero-page bg-error-qa">
       <div class="front">
         <h1>
           Error Q&A
@@ -229,6 +265,24 @@
           >
         </article>
       </div>
-    </div>
+    </section>
+
+    <section class="hero-page bg-kitten">
+      <div class="front">
+        <h1>
+          Cyber Kitten
+          <span class="offset">Cyber Kitten</span>
+        </h1>
+
+        <article>
+          <p>A cute kitten~</p>
+          <br />
+          <a href="https://github.com/dvorakchen/cyber-kitten" target="_blank"
+            >go and touch</a
+          >
+        </article>
+      </div>
+    </section>
+
   </body>
 </html>
